@@ -27,6 +27,10 @@
     flex-grow: 1;
 }
 
+input, label {
+    margin-right: 0.5rem;
+}
+
 .App-footer {
     display: flex;
     justify-content: center;
