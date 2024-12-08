@@ -1,0 +1,35 @@
+.App-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.App-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid red;
+}
+
+.App-header h1 {
+    color: red;
+}
+
+.App-header img {
+    width: 150px;
+    height: 150px;
+}
+
+.App-body, .App-footer {
+    padding: 2rem;
+}
+
+.App-body {
+    flex-grow: 1;
+}
+
+.App-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid red;
+}
