@@ -1,6 +1,6 @@
-import { getFooterCopy, getFullYear, getLatestNotification } from './utils';
+import { getFooterCopy, getFullYear, getLatestNotification } from '../utils/utils';
 import './Notifications.css';
-import closeIcon from './close-icon.png'
+import closeIcon from '../assets/close-icon.png'
 
 export default function Notifications() {
     const buttonUpdate = () => console.log('Close button has been clicked')
