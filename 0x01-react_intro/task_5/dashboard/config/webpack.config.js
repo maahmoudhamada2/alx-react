@@ -23,6 +23,11 @@ module.exports = {
             {
                 test: /\.(jpg|png|ico)$/i,
                 use: ['file-loader', 'image-webpack-loader']
+            },
+            {
+                test: /\.(js|jsx)$/i,
+                exclude: /node_modules/,
+                use: 'babel-loader'
             }
         ]
     }
