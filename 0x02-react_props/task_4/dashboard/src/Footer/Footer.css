@@ -1,0 +1,7 @@
+.App-footer {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid red;
+}
