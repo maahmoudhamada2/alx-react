@@ -1,0 +1,17 @@
+#CourseList {
+    width: 100%;
+    border: 1px solid #dfdbdb;
+    text-align: left;
+}
+
+#CourseList th {
+    padding: 0.5rem 0;
+}
+
+#CourseList th[colspan="2"] {
+    text-align: center;
+}
+
+#CourseList th {
+    border-bottom: 2px solid #dfdbdb;
+}
