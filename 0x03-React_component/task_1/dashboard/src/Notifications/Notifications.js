@@ -32,7 +32,6 @@ export default function Notifications({ displayDrawer, listNotifications }) {
                             <p>Here is the list of notifications</p>
                             <ul>
                                 {listNotifications.map((elem) => {
-                                    console.log(elem.type)
                                     return <NotificationItem
                                         key={elem.id}
                                         type={elem.type}
