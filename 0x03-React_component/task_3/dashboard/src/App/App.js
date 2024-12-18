@@ -7,6 +7,8 @@ import CourseList from '../CourseList/CourseList';
 import PropTypes from 'prop-types';
 import { getLatestNotification } from '../utils/utils';
 import { Component } from 'react';
+import BodySectionWithMarginBottom from '../BodySection/BodySectionWithMarginBottom';
+import BodySection from '../BodySection/BodySection';
 
 const listCourses = [
     {
@@ -58,9 +60,16 @@ export default class App extends Component {
                     <Header />
                     <div role='ws-body' className="App-body">
                         {this.props.isLoggedIn
-                            ? <CourseList listCourses={listCourses} />
-                            : <Login />
+                            ? <BodySectionWithMarginBottom title="Course list">
+                                <CourseList listCourses={listCourses} />
+                            </BodySectionWithMarginBottom>
+                            : <BodySectionWithMarginBottom title="Log in to continue">
+                                <Login />
+                            </BodySectionWithMarginBottom>
                         }
+                        <BodySection title="News from the School">
+                            <p>A paragraph with some random text</p>
+                        </BodySection>
                     </div>
                     <div role='ws-footer' className="App-footer">
                         <Footer />
