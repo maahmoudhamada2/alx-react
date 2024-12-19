@@ -1,0 +1,27 @@
+.Notifications {
+    border: 1px dashed red;
+    padding: 1rem;
+    width: 40%;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+}
+
+.menuItem {
+    text-align: right;
+    margin-bottom: 50px;
+    margin-right: 1rem;
+}
+
+.Notifications button img {
+    width: 20px;
+    height: 20px;
+}
+
+.Notifications ul li[data-notification-type="default"] {
+    color: blue;
+}
+
+.Notifications ul li[data-notification-type="urgent"] {
+    color: red;
+}
