@@ -47,7 +47,7 @@ const listNotifications = [
 ]
 
 const styles = StyleSheet.create({
-    'App-footer': {
+    appFooter: {
         padding: '2rem',
         display: 'flex',
         justifyContent: 'center',
@@ -55,13 +55,13 @@ const styles = StyleSheet.create({
         borderTop: '3px solid red'
     },
 
-    App: {
+    app: {
         display: 'flex',
         flexDirection: 'column',
         height: '100vh'
     },
     
-    'App-body': {
+    appBody: {
         padding: '2rem',
         flexGrow: '1'
     }
@@ -77,9 +77,9 @@ export default class App extends Component {
         return (
             <>
                 <Notifications listNotifications={listNotifications} />
-                <div className={css(styles['App'])}>
+                <div className={css(styles.app)}>
                     <Header />
-                    <div role='ws-body' className={css(styles['App-body'])}>
+                    <div role='ws-body' className={css(styles.appBody)}>
                         {this.props.isLoggedIn
                             ? <BodySectionWithMarginBottom title="Course list">
                                 <CourseList listCourses={listCourses} />
@@ -92,7 +92,7 @@ export default class App extends Component {
                             <p>A paragraph with some random text</p>
                         </BodySection>
                     </div>
-                    <div role='ws-footer' className={css(styles['App-footer'])}>
+                    <div role='ws-footer' className={css(styles.appFooter)}>
                         <Footer />
                     </div>
                 </div>
